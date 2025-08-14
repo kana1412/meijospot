@@ -1,0 +1,69 @@
+<!-- shop1.html: 1店舗目の詳細ページ（雛形＋最低限のUI） -->
+<!DOCTYPE html> <!-- HTML5宣言 -->
+<html lang="ja"> <!-- 言語を日本語に設定 -->
+<head> <!-- ヘッダー情報 -->
+  <meta charset="UTF-8"> <!-- 文字コードをUTF-8に設定 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- モバイル向け表示 -->
+  <title>麺屋ドラゴン | MeijoSpot</title> <!-- ページタイトル -->
+  <style> /* ページ内スタイル（最小） */
+    body{font-family:system-ui,sans-serif;margin:0} /* 基本フォントと余白を設定 */
+    header,footer{padding:12px 16px;background:#fff;border-bottom:1px solid #eee} /* ヘッダーとフッターの見た目 */
+    .back{display:inline-block;margin-right:8px} /* 戻るリンクの余白 */
+    .hero{position:relative} /* 画像切替コンテナの相対配置 */
+    .hero img{width:100%;aspect-ratio:4/3;object-fit:cover;display:none} /* 画像の比率と非表示の初期状態 */
+    .hero img.active{display:block} /* 表示中の画像だけ表示 */
+    .arrow{position:absolute;top:50%;transform:translateY(-50%);background:#0008;color:#fff;border:none;border-radius:999px;width:36px;height:36px} /* 左右矢印ボタンの見た目 */
+    .prev{left:8px} /* 左矢印の位置 */
+    .next{right:8px} /* 右矢印の位置 */
+    .meta{padding:12px 16px} /* メタ情報の余白 */
+    .gallery{display:grid;grid-auto-flow:column;grid-auto-columns:60%;gap:10px;overflow-x:auto;padding:12px 16px} /* 横スクロールギャラリー */
+    iframe{width:100%;height:280px;border:0} /* Googleマップ埋め込みのサイズ */
+    footer{text-align:center;background:#efefef;border-top:1px solid #eee} /* フッターの見た目 */
+  </style> <!-- スタイル終了 -->
+</head> <!-- ヘッダー情報終了 -->
+<body> <!-- 本文開始 -->
+
+  <header> <!-- ヘッダー -->
+    <a class="back" href="../index.html">← 戻る</a> <!-- 戻るリンク -->
+    <strong>麺屋ドラゴン</strong> <!-- 店名の見出し -->
+  </header> <!-- ヘッダー終了 -->
+
+  <section class="hero"> <!-- 画像切替のコンテナ -->
+    <img class="active" src="../img/ra-men.jpg" alt="ラーメン"> <!-- メイン画像1 -->
+    <img src="../img/外観.jpg" alt="外観"> <!-- メイン画像2 -->
+    <button class="arrow prev" aria-label="前へ">‹</button> <!-- 前へボタン -->
+    <button class="arrow next" aria-label="次へ">›</button> <!-- 次へボタン -->
+  </section> <!-- 画像切替終了 -->
+
+  <section class="meta"> <!-- 店舗のメタ情報 -->
+    <p><b>ジャンル：</b>ラーメン</p> <!-- ジャンル表記 -->
+    <p><b>営業時間：</b>11:00〜20:00（仮）</p> <!-- 営業時間の例 -->
+    <p><b>場所：</b>名城大学周辺（仮）</p> <!-- 場所の例 -->
+    <p><b>紹介：</b>自家製スープが売りのラーメン店です。</p> <!-- 紹介文の例 -->
+  </section> <!-- メタ情報終了 -->
+
+  <section class="gallery"> <!-- 横スクロールのギャラリー -->
+    <img src="../img/ra-men.jpg" alt="メニュー1"> <!-- ギャラリー画像1 -->
+    <img src="../img/外観.jpg" alt="メニュー2"> <!-- ギャラリー画像2 -->
+    <img src="../img/Top.jpg" alt="メニュー3"> <!-- ギャラリー画像3 -->
+  </section> <!-- ギャラリー終了 -->
+
+  <section class="meta"> <!-- 地図セクション -->
+    <h2>マップ</h2> <!-- 小見出し -->
+    <iframe loading="lazy" src="https://www.google.com/maps?q=35.1561,136.9635&hl=ja&z=16&output=embed"></iframe> <!-- 簡易埋め込み（座標は上記Leafletと同じ） -->
+  </section> <!-- 地図セクション終了 -->
+
+  <footer> <!-- フッター -->
+    <small>© 2025 MeijoSpot</small> <!-- コピーライト -->
+  </footer> <!-- フッター終了 -->
+
+  <script> // 画像切替用の最小スクリプト
+    const imgs=[...document.querySelectorAll('.hero img')]; // 画像要素を配列取得
+    let i=0; // 現在のインデックス
+    function show(n){ imgs.forEach((el,k)=>el.classList.toggle('active',k===n)); } // 指定だけ表示
+    document.querySelector('.prev').onclick=()=>{ i=(i-1+imgs.length)%imgs.length; show(i); }; // 前へボタンの処理
+    document.querySelector('.next').onclick=()=>{ i=(i+1)%imgs.length; show(i); }; // 次へボタンの処理
+  </script> <!-- スクリプト終了 -->
+
+</body> <!-- 本文終了 -->
+</html> <!-- 文書終了 -->

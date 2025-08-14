@@ -1,0 +1,44 @@
+/* styles.css: サイト全体の見た目を定義するファイル */
+* { box-sizing: border-box; } /* 余白計算を安定させる設定 */
+html, body { margin: 0; padding: 0; font-family: system-ui, sans-serif; } /* デフォルト余白を除去し基本フォントを指定 */
+img { max-width: 100%; height: auto; display: block; } /* 画像をレスポンシブ化 */
+a { color: inherit; text-decoration: none; } /* リンクの下線を消し色を親に合わせる */
+
+.header { display: flex; align-items: center; gap: 8px; padding: 8px 12px; background: #fff; position: sticky; top: 0; z-index: 20; border-bottom: 1px solid #eee; } /* ヘッダーの横並びと固定 */
+.logo { width: 120px; flex: 0 0 auto; } /* ロゴの幅を調整 */
+.logo img { width: 100%; } /* ロゴ画像をコンテナ幅に収める */
+
+.search { flex: 1 1 auto; display: flex; align-items: center; background: #f6f6f6; padding: 6px 10px; border-radius: 999px; } /* 検索ボックスの見た目 */
+.search-icon { width: 18px; height: 18px; margin-right: 6px; opacity: .7; } /* 検索アイコンのサイズ */
+.search input { width: 100%; border: none; background: transparent; outline: none; font-size: 14px; } /* 入力欄の装飾を除去 */
+
+.hamburger { flex: 0 0 auto; font-size: 22px; background: transparent; border: none; padding: 6px 8px; } /* ハンバーガーの見た目 */
+
+.drawer { position: fixed; inset: 0 0 0 auto; width: 70%; max-width: 320px; background: #fff; transform: translateX(100%); transition: transform .25s; padding: 16px; display: flex; flex-direction: column; gap: 10px; z-index: 30; border-left: 1px solid #eee; } /* 右からスライドするナビ */
+.drawer.open { transform: translateX(0); } /* 開いている状態の位置 */
+.drawer-link { padding: 12px; border-radius: 8px; background: #f7f7f7; } /* ナビ内リンクの見た目 */
+
+.hero { aspect-ratio: 16/9; background: #ddd; } /* ヒーロー領域の縦横比を確保 */
+.slider { position: relative; width: 100%; height: 100%; overflow: hidden; } /* スライダーの枠 */
+.slide { position: absolute; inset: 0; object-fit: cover; opacity: 0; transition: opacity .4s; } /* スライド画像の重ね配置 */
+.slide.active { opacity: 1; } /* 表示中のスライドを不透明に */
+
+.quick-actions { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; padding: 12px; background: #fff; } /* 4ボタンを等幅グリッドで並べる */
+.action-btn { display: flex; flex-direction: column; align-items: center; gap: 6px; padding: 8px; background: #f7f7f7; border: none; border-radius: 12px; } /* ボタンのベース */
+.action-btn img { width: 36px; height: 36px; object-fit: contain; } /* ボタン内アイコンのサイズ */
+.action-btn span { font-size: 12px; } /* ボタンラベルのサイズ */
+
+.shop-area { padding: 8px 12px 20px; } /* 店舗セクションの余白 */
+.section-title { font-size: 16px; margin: 6px 0 10px; } /* セクションタイトルの見た目 */
+.shop-row { display: grid; grid-auto-flow: column; grid-auto-columns: 45%; gap: 10px; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 6px; } /* 横スクロール行を作成 */
+.shop-card { scroll-snap-align: start; background: #fff; border: 1px solid #eee; border-radius: 12px; overflow: hidden; } /* 店舗カードの見た目 */
+.shop-card img { width: 100%; aspect-ratio: 4/3; object-fit: cover; } /* サムネールの比率 */
+.shop-card .meta { padding: 8px; display: flex; justify-content: space-between; align-items: center; } /* 店名とバッジの行 */
+.badge { font-size: 11px; padding: 2px 6px; border-radius: 999px; background: #eef6ff; color: #2563eb; } /* 学内・学外バッジ */
+
+.footer { margin-top: 16px; padding: 16px; background: #efefef; text-align: center; } /* フッターの見た目 */
+
+/* 画面幅が広いときの少しの調整 */
+@media (min-width: 768px) { /* タブレット以上の幅に適用 */
+  .shop-row { grid-auto-columns: 30%; } /* カードを少し小さくして表示数を増やす */
+}

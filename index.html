@@ -1,0 +1,87 @@
+<!-- index.html: トップページの本体 -->
+<!DOCTYPE html> <!-- ドキュメントタイプをHTML5に指定 -->
+<html lang="ja"> <!-- ページ言語を日本語に設定 -->
+<head> <!-- メタ情報の開始 -->
+  <meta charset="UTF-8"> <!-- 文字コードをUTF-8に設定 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- モバイル表示用の拡大縮小設定 -->
+  <title>MeijoSpot | 名城大学周辺グルメ</title> <!-- タブに表示されるタイトル -->
+  <link rel="stylesheet" href="css/styles.css"> <!-- 外部CSSを読み込み -->
+</head> <!-- メタ情報の終了 -->
+<body> <!-- ページ本体の開始 -->
+
+  <!-- ヘッダー（ロゴ／検索／ハンバーガー） -->
+  <header class="header"> <!-- ヘッダー全体のラッパー -->
+    <a href="index.html" class="logo"> <!-- ロゴをクリックでトップへ -->
+      <img src="img/rogo.png" alt="MeijoSpot ロゴ"> <!-- 指定のロゴ画像を表示 -->
+    </a> <!-- ロゴリンクの終了 -->
+
+    <div class="search"> <!-- 検索ボックスのラッパー -->
+      <img src="img/rogo2.png" class="search-icon" alt="検索アイコン"> <!-- 左側の虫眼鏡アイコン -->
+      <input id="searchInput" type="search" placeholder="店舗名・ジャンルで検索"> <!-- 検索入力欄 -->
+    </div> <!-- 検索ボックスの終了 -->
+
+    <button id="menuBtn" class="hamburger" aria-label="メニュー"> <!-- ハンバーガーボタン -->
+      ☰ <!-- シンプルな3本線の代替文字 -->
+    </button> <!-- ハンバーガーボタンの終了 -->
+  </header> <!-- ヘッダー終了 -->
+
+  <!-- ドロワーメニュー（クリックで開閉） -->
+  <nav id="drawer" class="drawer"> <!-- スライド表示のナビ -->
+    <a href="index.html" class="drawer-link">トップ</a> <!-- トップへのリンク -->
+    <a href="pages/contact.html" class="drawer-link">お問い合わせ</a> <!-- お問い合わせへのリンク -->
+    <a href="pages/news.html" class="drawer-link">お知らせ</a> <!-- お知らせへのリンク -->
+    <a href="pages/access.html" class="drawer-link">アクセス</a> <!-- アクセスへのリンク -->
+    <a href="pages/find.html" class="drawer-link">お店を探す</a> <!-- お店を探すへのリンク -->
+    <a href="pages/map.html" class="drawer-link">マップ</a> <!-- 地図ページへのリンク -->
+  </nav> <!-- ドロワーメニュー終了 -->
+
+  <!-- ヒーロー画像スライダー（自動・スワイプ対応） -->
+  <section class="hero"> <!-- ヒーローエリア -->
+    <div id="slider" class="slider"> <!-- スライダー本体 -->
+      <img src="img/Top.jpg" alt="トップ写真" class="slide active"> <!-- 1枚目のスライド -->
+      <img src="img/外観.jpg" alt="外観写真" class="slide"> <!-- 2枚目のスライド -->
+      <img src="img/ra-men.jpg" alt="ラーメン写真" class="slide"> <!-- 3枚目のスライド -->
+    </div> <!-- スライダー本体の終了 -->
+  </section> <!-- ヒーローエリア終了 -->
+
+  <!-- 4つのカテゴリーボタン -->
+  <section class="quick-actions"> <!-- クイックアクションのラッパー -->
+    <button class="action-btn" data-filter="all"> <!-- 全件表示のボタン -->
+      <img src="img/all.png" alt="全てアイコン"> <!-- 指定のアイコン画像 -->
+      <span>全て</span> <!-- ボタンラベル -->
+    </button> <!-- 全件ボタン終了 -->
+    <button class="action-btn" data-filter="inside"> <!-- 学内のみ表示のボタン -->
+      <img src="img/学内.png" alt="学内アイコン"> <!-- 指定のアイコン画像 -->
+      <span>学内</span> <!-- ボタンラベル -->
+    </button> <!-- 学内ボタン終了 -->
+    <button class="action-btn" data-filter="outside"> <!-- 学外（屋台含む）のボタン -->
+      <img src="img/学外.png" alt="学外アイコン"> <!-- 指定のアイコン画像 -->
+      <span>学外</span> <!-- ボタンラベル -->
+    </button> <!-- 学外ボタン終了 -->
+    <a class="action-btn" href="pages/map.html"> <!-- マップページへ遷移するボタン -->
+      <img src="img/map.png" alt="マップアイコン"> <!-- 指定のアイコン画像 -->
+      <span>マップ</span> <!-- ボタンラベル -->
+    </a> <!-- マップボタン終了 -->
+  </section> <!-- クイックアクション終了 -->
+
+  <!-- 店舗一覧（2行×横スクロール） -->
+  <main class="shop-area"> <!-- メインコンテンツのラッパー -->
+    <h2 class="section-title">店舗一覧</h2> <!-- セクションタイトル -->
+
+    <div id="row1" class="shop-row"> <!-- 1行目の横スクロール行 -->
+      <!-- JavaScriptでカードを生成して挿入するため空で用意 -->
+    </div> <!-- 1行目終了 -->
+
+    <div id="row2" class="shop-row"> <!-- 2行目の横スクロール行 -->
+      <!-- JavaScriptでカードを生成して挿入するため空で用意 -->
+    </div> <!-- 2行目終了 -->
+  </main> <!-- メインコンテンツ終了 -->
+
+  <!-- フッター -->
+  <footer class="footer"> <!-- フッター領域 -->
+    <small>© 2025 MeijoSpot</small> <!-- コピーライト表記 -->
+  </footer> <!-- フッター終了 -->
+
+  <script src="js/app.js"></script> <!-- フロントの振る舞いを定義するJSを読み込み -->
+</body> <!-- ページ本体の終了 -->
+</html> <!-- HTML文書の終了 -->
