@@ -42,3 +42,99 @@ a { color: inherit; text-decoration: none; } /* リンクの下線を消し色�
 @media (min-width: 768px) { /* タブレット以上の幅に適用 */
   .shop-row { grid-auto-columns: 30%; } /* カードを少し小さくして表示数を増やす */
 }
+/* ====== 戻るボタン ====== */
+.back-btn {
+  position: fixed;           /* 画面に固定 */
+  left: 12px;
+  top: 12px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  border-radius: 9999px;     /* ピル型 */
+  border: 1px solid rgba(0,0,0,0.08);
+  background: rgba(255,255,255,0.7);
+  backdrop-filter: blur(6px);           /* ちょい“今っぽい” */
+  -webkit-backdrop-filter: blur(6px);
+  color: #333;
+  font-size: 14px;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  cursor: pointer;
+  z-index: 1100;             /* ヘッダーより手前に */
+  transition: transform .15s ease, box-shadow .15s ease, background .15s ease;
+}
+.back-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+  background: rgba(255,255,255,0.85);
+}
+.back-btn:active {
+  transform: translateY(0);
+}
+.back-btn svg {
+  display: block;
+}
+.back-btn__label {
+  line-height: 1;
+}
+
+/* ====== メニュー・オーバーレイ ====== */
+.menu-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.35);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+  z-index: 1090;
+}
+
+/* ====== ドロワー（左スライド） ====== */
+/* 既存のドロワーに追加/調整してください。無い場合は新規定義 */
+.drawer {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: min(84vw, 320px);
+  background: #fff;
+  box-shadow: 2px 0 16px rgba(0,0,0,0.12);
+  transform: translateX(-100%);       /* 初期は隠す */
+  transition: transform .25s ease;
+  z-index: 1101;
+  overflow-y: auto;
+}
+.drawer.is-open {
+  transform: translateX(0);
+}
+
+/* ドロワー内 × ボタン */
+.drawer__close {
+  position: sticky;          /* スクロールしても上に固定 */
+  top: 0;
+  left: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  margin: 8px;
+  border-radius: 8px;
+  border: 1px solid rgba(0,0,0,0.06);
+  background: #f6f7f8;
+  color: #111;
+  font-size: 20px;
+  line-height: 1;
+  cursor: pointer;
+  transition: background .15s ease, transform .15s ease;
+}
+.drawer__close:hover {
+  background: #eceff3;
+  transform: scale(1.02);
+}
+
+/* （任意）ハンバーガーと重なり順が競合する場合の調整 */
+#hamburgerBtn {
+  z-index: 1200;
+}
+
