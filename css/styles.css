@@ -68,7 +68,7 @@ a { color: inherit; text-decoration: none; }
 
 /* 画像スライダー（詳細ページ） */
 .detail-hero { position: relative; } /* ← これが必須（オーバーレイの基準） */
-.detail-hero img { width: 100%; aspect-ratio: 4/3; object-fit: cover; display: none; }
+.detail-hero img { width: 100%; aspect-ratio: 16/9; object-fit: cover; display: none; }
 .detail-hero img.active { display: block; }
 
 /* ナビ矢印 */
@@ -128,4 +128,5 @@ a { color: inherit; text-decoration: none; }
   .store-info, .gallery, .map-block { max-width: 860px; margin-left: auto; margin-right: auto; }
   .store-title-overlay { font-size: 1.8rem; }
 }
+
 
