@@ -20,7 +20,7 @@ document.getElementById('slider').addEventListener('touchend',e=>{ // 指を離�
 
 // ---------- 店舗データ（最小サンプル5件） ----------
 const SHOPS = [ // カード生成・検索・フィルタに使う配列
-  { id:1, name:'麺屋ドラゴン', genre:'ラーメン', area:'outside', img:'img/ra-men.jpg', page:'shops/shop1.html' }, // 1件目：学外・ラーメン
+  { id:1, name:'英吉家', genre:'ラーメン', area:'outside', img:'img/hideyoshi.jpg', page:'shops/shop1.html' }, // 1件目：学外・ラーメン
   { id:2, name:'学食カフェ', genre:'定食', area:'inside',  img:'img/外観.jpg',    page:'shops/shop2.html' }, // 2件目：学内・定食
   { id:3, name:'コモンホール', genre:'カフェ', area:'inside', img:'img/Top.jpg',     page:'shops/shop3.html' }, // 3件目：学内・カフェ
   { id:4, name:'屋台タコス',  genre:'屋台',   area:'outside', img:'img/外観.jpg',    page:'shops/shop4.html' }, // 4件目：学外・屋台
@@ -71,4 +71,5 @@ document.querySelectorAll('.action-btn[data-filter]').forEach(btn=>{ // フィ�
     searchInput.value = ''; // ボタンでのフィルタ時は検索入力をリセット
   }); // クリックイベント終了
 }); // ボタン設定の終了
+
 
