@@ -128,5 +128,23 @@ a { color: inherit; text-decoration: none; }
   .store-info, .gallery, .map-block { max-width: 860px; margin-left: auto; margin-right: auto; }
   .store-title-overlay { font-size: 1.8rem; }
 }
+.map-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9比率（高さ調整） */
+  height: 0;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.map-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
 
 
