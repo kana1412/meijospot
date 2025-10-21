@@ -10,7 +10,7 @@ drawer.addEventListener('click', e => { if (e.target.matches('.drawer-link')) dr
 const slides = [...document.querySelectorAll('.slide')]; // スライド画像を配列で取得
 let idx = 0; // 現在のスライド番号を保持
 function show(i){ slides.forEach((s,n)=>s.classList.toggle('active', n===i)); } // 指定番号だけ表示する関数
-setInterval(()=>{ idx = (idx+1)%slides.length; show(idx); }, 4000); // 4秒ごとに自動で次へ
+setInterval(()=>{ idx = (idx+1)%slides.length; show(idx); }, 7000); // 4秒ごとに自動で次へ
 let startX = 0; // スワイプ開始位置を保持
 document.getElementById('slider').addEventListener('touchstart',e=>startX=e.touches[0].clientX); // 指で触れた位置を記録
 document.getElementById('slider').addEventListener('touchend',e=>{ // 指を離したら判定
@@ -71,3 +71,4 @@ document.querySelectorAll('.action-btn[data-filter]').forEach(btn=>{ // フィ�
     searchInput.value = ''; // ボタンでのフィルタ時は検索入力をリセット
   }); // クリックイベント終了
 }); // ボタン設定の終了
+
