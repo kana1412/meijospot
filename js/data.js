@@ -15,7 +15,7 @@ const SHOPS = [
     place: '名城大学 東門から徒歩1分（仮）', // 場所の説明
     desc: '自家製スープが売りのラーメン店です。', //　店舗説明
     mapUrl:
-      'https://www.google.com/maps?q=横浜家系ラーメン英吉家 名古屋市天白区塩釜口２丁目８０１&hl=ja&z=16&output=embed'
+      'https://www.google.com/maps?q=横浜家系ラーメン英吉家&hl=ja&z=16&output=embed'
   }, //　マップ
 
   {
@@ -104,4 +104,5 @@ const SHOPS = [
   },
 
 ];
+
 
