@@ -18,15 +18,6 @@ document.getElementById('slider').addEventListener('touchend',e=>{ // 指を離�
   if(Math.abs(diff)>40){ idx = (idx + (diff<0?1:-1) + slides.length) % slides.length; show(idx); } // 左右に応じてスライド変更
 }); // スワイプ処理の終了
 
-// ---------- 店舗データ（最小サンプル5件） ----------
-const SHOPS = [ // カード生成・検索・フィルタに使う配列
-  { id:1, name:'英吉家', genre:'ラーメン', area:'outside', img:'img/hideyoshi.jpg', page:'shops/shop1.html' }, // 1件目：学外・ラーメン
-  { id:2, name:'学食カフェ', genre:'定食', area:'inside',  img:'img/外観.jpg',    page:'shops/shop2.html' }, // 2件目：学内・定食
-  { id:3, name:'コモンホール', genre:'カフェ', area:'inside', img:'img/Top.jpg',     page:'shops/shop3.html' }, // 3件目：学内・カフェ
-  { id:4, name:'屋台タコス',  genre:'屋台',   area:'outside', img:'img/外観.jpg',    page:'shops/shop4.html' }, // 4件目：学外・屋台
-  { id:5, name:'定食すぎだま', genre:'定食', area:'outside', img:'img/Top.jpg',     page:'shops/shop5.html' }, // 5件目：学外・定食
-]; // データ定義の終了
-
 // ---------- カードを2行に振り分けて描画 ----------
 const row1 = document.getElementById('row1'); // 1行目の要素を取得
 const row2 = document.getElementById('row2'); // 2行目の要素を取得
@@ -35,7 +26,7 @@ function render(list){ // 描画用の関数
   list.forEach((s,i)=>{ // 各店舗について処理
     const card = document.createElement('a'); // クリックで詳細へ飛ぶカードを作成
     card.className = 'shop-card'; // カード用のクラスを付与
-    card.href = s.page; // 遷移先ページのパスを設定
+    card.href = `shop.html?id=${s.id}`; // data.js用に変更
     card.dataset.area = s.area; // 学内・学外の判定用に属性を持たせる
     card.dataset.name = (s.name + ' ' + s.genre).toLowerCase(); // 検索用の文字列を格納（小文字）
     card.innerHTML = `<!-- HTMLをテンプレートで埋め込み -->
@@ -71,5 +62,6 @@ document.querySelectorAll('.action-btn[data-filter]').forEach(btn=>{ // フィ�
     searchInput.value = ''; // ボタンでのフィルタ時は検索入力をリセット
   }); // クリックイベント終了
 }); // ボタン設定の終了
+
 
 
