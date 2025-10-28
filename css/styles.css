@@ -146,6 +146,27 @@ a { color: inherit; text-decoration: none; }
   border: 0;
 }
 
+/* アクセス見出しデザイン（中央寄せ・下線つき） */
+.meta h2 {
+  position: relative;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #333;
+  text-align: center;
+  margin: 28px 0 12px; /* 少し余白を詰める */
+  letter-spacing: 0.05em;
+}
+
+/* 下線（青系アクセント・文字のすぐ下に） */
+.meta h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #0078d7;
+  margin: 4px auto 0; /* ← 距離を近づけるポイント */
+  border-radius: 3px;
+}
 
 
 
