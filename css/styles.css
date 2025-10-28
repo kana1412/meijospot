@@ -149,7 +149,7 @@ a { color: inherit; text-decoration: none; }
 /* アクセス見出しデザイン（中央寄せ・下線つき） */
 .meta h2 {
   position: relative;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: 700;
   color: #333;
   text-align: center;
@@ -161,12 +161,13 @@ a { color: inherit; text-decoration: none; }
 .meta h2::after {
   content: "";
   display: block;
-  width: 60px;
+  width: 70px;
   height: 3px;
   background: #0078d7;
-  margin: 4px auto 0; /* ← 距離を近づけるポイント */
+  margin: 3px auto 0; /* ← 距離を近づけるポイント */
   border-radius: 3px;
 }
+
 
 
 
