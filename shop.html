@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>店舗詳細 | MeijoSpot</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- 共通ヘッダー -->
+  <header class="header">
+    <a href="index.html" class="logo">
+      <img src="img/rogo.png" alt="MeijoSpot ロゴ">
+    </a>
+
+    <div class="search">
+      <img src="img/rogo2.png" class="search-icon" alt="検索アイコン">
+      <input id="searchInput" type="search" placeholder="店舗名・ジャンルで検索">
+    </div>
+
+    <button id="menuBtn" class="hamburger" aria-label="メニュー">☰</button>
+  </header>
+
+  <!-- ドロワーメニュー -->
+  <nav id="drawer" class="drawer">
+    <a href="index.html" class="drawer-link">トップ</a>
+    <a href="pages/contact.html" class="drawer-link">お問い合わせ</a>
+    <a href="pages/news.html" class="drawer-link">お知らせ</a>
+    <a href="pages/access.html" class="drawer-link">アクセス</a>
+    <a href="pages/find.html" class="drawer-link">お店を探す</a>
+    <a href="pages/map.html" class="drawer-link">マップ</a>
+  </nav>
+
+  <!-- 画像スライダー＋店名 -->
+  <section class="detail-hero" id="heroArea">
+    <!-- JSで画像<img>を複数追加する -->
+    <button class="arrow prev" aria-label="前へ">‹</button>
+    <button class="arrow next" aria-label="次へ">›</button>
+
+    <!-- 店名を画像の左下にオーバーレイ -->
+    <h1 class="store-title-overlay" id="storeNameOverlay">店名</h1>
+  </section>
+
+  <!-- 基本情報 -->
+  <section class="store-info">
+    <p>🍽️ <b>ジャンル：</b><span id="genreText"></span></p>
+    <p>🕒 <b>営業時間：</b><span id="hoursText"></span></p>
+    <p>🗺️ <b>場所：</b><span id="placeText"></span></p>
+    <p>💬 <b>紹介：</b><span id="descText"></span></p>
+  </section>
+
+  <!-- 地図 -->
+  <section class="meta">
+    <h2>アクセス</h2>
+    <div class="map-container">
+      <iframe
+        loading="lazy"
+        id="mapFrame"
+        src=""
+        allowfullscreen=""
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <small>© 2025 MeijoSpot</small>
+  </footer>
+
+  <!-- ① データベースを読み込む -->
+  <script src="js/data.js"></script>
+
+  <!-- ② このページ専用のスクリプト -->
+  <script>
+    // ---- ドロワーメニュー（ヘッダー右上の☰） ----
+    const menuBtn = document.getElementById('menuBtn');
+    const drawer  = document.getElementById('drawer');
+    menuBtn.addEventListener('click', () => drawer.classList.toggle('open'));
+    drawer.addEventListener('click', e => {
+      if (e.target.matches('.drawer-link')) drawer.classList.remove('open');
+    });
+
+    // ---- URLから ?id=◯ を取得 ----
+    const params = new URLSearchParams(location.search);
+    const id = Number(params.get('id')); // 文字列→数値
+
+    // ---- idに一致する店舗を探す ----
+    const shop = SHOPS.find(s => s.id === id);
+
+    if (!shop) {
+      // 万が一id不正ならトップに戻す
+      location.href = 'index.html';
+    }
+
+    // ---- HTMLに反映（テキスト系）----
+    document.getElementById('storeNameOverlay').textContent = shop.name;
+    document.getElementById('genreText').textContent = shop.genre;
+    document.getElementById('hoursText').textContent = shop.hours;
+    document.getElementById('placeText').textContent = shop.place;
+    document.getElementById('descText').textContent = shop.desc;
+    document.getElementById('mapFrame').src = shop.mapUrl;
+
+    // ---- スライダーの画像を差し込む ----
+    const heroArea = document.getElementById('heroArea');
+
+    // 矢印ボタン以外は後から作るので、既存の<button>以外のimgは一旦なし
+    // shop.gallery の各画像パスを <img> として追加する
+    shop.gallery.forEach((src, index) => {
+      const img = document.createElement('img');
+      img.src = src;
+      img.alt = shop.name;
+      img.className = index === 0 ? 'active' : ''; // 最初の1枚だけ表示
+      heroArea.insertBefore(img, heroArea.querySelector('.arrow.prev'));
+    });
+
+    // ---- スライダーの左右ボタン動作 ----
+    const imgs = [...heroArea.querySelectorAll('img')];
+    let current = 0;
+    function show(n){
+      imgs.forEach((el,k)=>{
+        el.classList.toggle('active', k===n);
+        // styles.cssでは .detail-hero img.active { display:block }、他はdisplay:noneにしてある
+      });
+    }
+    heroArea.querySelector('.arrow.prev').onclick = () => {
+      current = (current - 1 + imgs.length) % imgs.length;
+      show(current);
+    };
+    heroArea.querySelector('.arrow.next').onclick = () => {
+      current = (current + 1) % imgs.length;
+      show(current);
+    };
+  </script>
+</body>
+</html>
