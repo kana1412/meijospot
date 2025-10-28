@@ -2,21 +2,21 @@
 
 const SHOPS = [
   {
-    id: 1,
-    name: '英吉家',
-    genre: 'ラーメン',
-    area: 'outside', // 'inside' or 'outside'
-    img: 'img/hideyoshi.jpg', // 一覧カード用のサムネ
+    id: 1, // ページタグ（被らないように）
+    name: '英吉家',　// 店舗名
+    genre: 'ラーメン', // ジャンル名
+    area: 'outside', // 'inside'か'outside'を記入（学内か学外）
+    img: 'img/hideyoshi.jpg', // サムネ写真
     gallery: [
       'img/hideyoshi.jpg',
       'img/外観.jpg'
-    ],
-    hours: '11:00〜20:00',
-    place: '名城大学 東門から徒歩1分（仮）',
-    desc: '自家製スープが売りのラーメン店です。',
+    ], // ギャラリー写真
+    hours: '11:00〜20:00', // 営業時間
+    place: '名城大学 東門から徒歩1分（仮）', // 場所の説明
+    desc: '自家製スープが売りのラーメン店です。', //　店舗説明
     mapUrl:
       'https://www.google.com/maps?q=横浜家系ラーメン英吉家 名古屋市天白区塩釜口２丁目８０１&hl=ja&z=16&output=embed'
-  },
+  }, //　マップ
 
   {
     id: 2,
@@ -104,3 +104,4 @@ const SHOPS = [
   },
 
 ];
+
