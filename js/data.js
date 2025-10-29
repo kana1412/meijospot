@@ -30,7 +30,7 @@ const SHOPS = [
     ],
     hours: '10:00〜17:00',
     place: '名城大学内',
-    desc: 'とりあえずあとで',
+    desc: '後日記入',
     mapUrl:
       'https://www.google.com/maps?q=名城大学&hl=ja&z=16&output=embed'
   },
@@ -47,7 +47,7 @@ const SHOPS = [
     ],
     hours: '9:00〜18:00',
     place: '名城大学内外',
-    desc: 'えっぐい並ぶ次郎系ラーメン',
+    desc: '後日記入',
     mapUrl:
       'https://www.google.com/maps?q=名城大学&hl=ja&z=16&output=embed'
   },
@@ -62,9 +62,9 @@ const SHOPS = [
       'img/image_TenNoShiro.jpg',
       'img/外観.jpg'
     ],
-    hours: '11:30〜14:00',
+    hours: '後日記入',
     place: '大学近く',
-    desc: 'なんの変哲もない居酒屋だよーん',
+    desc: '後日記入',
     mapUrl:
       'https://www.google.com/maps?q=名城大学&hl=ja&z=16&output=embed'
   },
@@ -79,9 +79,9 @@ const SHOPS = [
       'img/image_GoldenDaze.jpg',
       'img/外観.jpg'
     ],
-    hours: '11:00〜21:00',
+    hours: '後日記入',
     place: '名城大学 周辺エリア',
-    desc: 'よーしりません',
+    desc: '後日記入',
     mapUrl:
       'https://www.google.com/maps?q=名城大学&hl=ja&z=16&output=embed'
   },
@@ -96,9 +96,9 @@ const SHOPS = [
       'img/image_tiikebabu.jpg',
       'img/外観.jpg'
     ],
-    hours: '',
+    hours: '後日記入',
     place: '名城大学外',
-    desc: '俺ケバブ食ったことない',
+    desc: '後日記入',
     mapUrl:
       'https://www.google.com/maps?q=横浜家系ラーメン英吉家 名古屋市天白区塩釜口２丁目８０１&hl=ja&z=16&output=embed'
   },
@@ -113,9 +113,9 @@ const SHOPS = [
       'img/image_RamenMugen.jpg',
       'img/外観.jpg'
     ],
-    hours: '11:00〜20:00',
+    hours: '後日記入',
     place: '名城大学外',
-    desc: '自家製スープが売りのラーメン店です。',
+    desc: '後日記入',
     mapUrl:
       'https://www.google.com/maps?q=横浜家系ラーメン英吉家 名古屋市天白区塩釜口２丁目８０１&hl=ja&z=16&output=embed'
   },
@@ -130,9 +130,9 @@ const SHOPS = [
       'img/image_yuncha.jpg',
       'img/外観.jpg'
     ],
-    hours: '11:00〜20:00',
+    hours: '後日記入',
     place: '名城大学外',
-    desc: 'ドリンク',
+    desc: '後日記入',
     mapUrl:
       'https://www.google.com/maps?q=横浜家系ラーメン英吉家 名古屋市天白区塩釜口２丁目８０１&hl=ja&z=16&output=embed'
   },
@@ -147,9 +147,9 @@ const SHOPS = [
       'img/image_shinrin.jpg',
       'img/外観.jpg'
     ],
-    hours: '11:00〜20:00',
+    hours: '後日記入',
     place: '名城大学外）',
-    desc: 'なんの変哲もない中華＾＾料理',
+    desc: '後日記入',
     mapUrl:
       'https://www.google.com/maps?q=横浜家系ラーメン英吉家 名古屋市天白区塩釜口２丁目８０１&hl=ja&z=16&output=embed'
   },
@@ -164,9 +164,9 @@ const SHOPS = [
       'img/image_ShinjidaiShiogamaguchiEkiMae.jpg',
       'img/外観.jpg'
     ],
-    hours: '11:00〜20:00',
+    hours: '後日記入',
     place: '名城大学外',
-    desc: 'エッグい居酒屋',
+    desc: '後日記入',
     mapUrl:
       'https://www.google.com/maps?q=横浜家系ラーメン英吉家 名古屋市天白区塩釜口２丁目８０１&hl=ja&z=16&output=embed'
   },
@@ -181,9 +181,9 @@ const SHOPS = [
       'img/image_SandaimeTorimero.jpg',
       'img/外観.jpg'
     ],
-    hours: '11:00〜20:00',
+    hours: '後日記入',
     place: '名城大学外',
-    desc: 'どう考えても焼き鳥屋やん',
+    desc: '後日記入',
     mapUrl:
       'https://www.google.com/maps?q=横浜家系ラーメン英吉家 名古屋市天白区塩釜口２丁目８０１&hl=ja&z=16&output=embed'
   },
@@ -198,9 +198,9 @@ const SHOPS = [
       'img/image_rairai.jpg',
       'img/外観.jpg'
     ],
-    hours: '11:00〜20:00',
+    hours: '後日記入',
     place: '名城大学外',
-    desc: 'もう見たこともない',
+    desc: '後日記入',
     mapUrl:
       'https://www.google.com/maps?q=横浜家系ラーメン英吉家 名古屋市天白区塩釜口２丁目８０１&hl=ja&z=16&output=embed'
   },
@@ -215,9 +215,9 @@ const SHOPS = [
       'img/image_Parsley.jpg',
       'img/外観.jpg'
     ],
-    hours: '11:00〜20:00',
+    hours: '後日記入',
     place: '名城大学外',
-    desc: '女心は気を付けても無駄',
+    desc: '後日記入',
     mapUrl:
       'https://www.google.com/maps?q=横浜家系ラーメン英吉家 名古屋市天白区塩釜口２丁目８０１&hl=ja&z=16&output=embed'
   },
@@ -232,9 +232,9 @@ const SHOPS = [
       'img/image_TokyoAburasoba.jpg',
       'img/外観.jpg'
     ],
-    hours: '11:00〜20:00',
+    hours: '後日記入',
     place: '名城大学外',
-    desc: '一番油そば',
+    desc: '後日記入',
     mapUrl:
       'https://www.google.com/maps?q=横浜家系ラーメン英吉家 名古屋市天白区塩釜口２丁目８０１&hl=ja&z=16&output=embed'
   },
@@ -249,9 +249,9 @@ const SHOPS = [
       'img/image_corocoro.jpg',
       'img/外観.jpg'
     ],
-    hours: '11:00〜20:00',
+    hours: '後日記入',
     place: '名城大学外',
-    desc: '弁当やってほっともっと以外知らんよな',
+    desc: '後日記入',
     mapUrl:
       'https://www.google.com/maps?q=横浜家系ラーメン英吉家 名古屋市天白区塩釜口２丁目８０１&hl=ja&z=16&output=embed'
   },
@@ -266,9 +266,9 @@ const SHOPS = [
       'img/image_MuchiesStand.jpg',
       'img/外観.jpg'
     ],
-    hours: '11:00〜20:00',
+    hours: '後日記入',
     place: '名城大学外',
-    desc: 'マジで知らん',
+    desc: '後日記入',
     mapUrl:
       'https://www.google.com/maps?q=横浜家系ラーメン英吉家 名古屋市天白区塩釜口２丁目８０１&hl=ja&z=16&output=embed'
   },
@@ -283,9 +283,9 @@ const SHOPS = [
       'img/image_kinko.jpg',
       'img/外観.jpg'
     ],
-    hours: '11:00〜20:00',
+    hours: '後日記入',
     place: '名城大学外',
-    desc: 'バグぐらい量ある定食屋',
+    desc: '後日記入',
     mapUrl:
       'https://www.google.com/maps?q=横浜家系ラーメン英吉家 名古屋市天白区塩釜口２丁目８０１&hl=ja&z=16&output=embed'
   },
@@ -300,9 +300,9 @@ const SHOPS = [
       'img/image_guranteiMirano.jpg',
       'img/外観.jpg'
     ],
-    hours: '11:00〜20:00',
+    hours: '後日記入',
     place: '名城大学内',
-    desc: '人多すぎてきつい',
+    desc: '後日記入',
     mapUrl:
       'https://www.google.com/maps?q=横浜家系ラーメン英吉家 名古屋市天白区塩釜口２丁目８０１&hl=ja&z=16&output=embed'
   },
@@ -317,13 +317,14 @@ const SHOPS = [
       'img/image_SeikyoShokudo.jpg',
       'img/外観.jpg'
     ],
-    hours: '11:00〜20:00',
+    hours: '後日記入',
     place: '名城大学内',
-    desc: 'いったことない',
+    desc: '後日記入',
     mapUrl:
       'https://www.google.com/maps?q=横浜家系ラーメン英吉家 名古屋市天白区塩釜口２丁目８０１&hl=ja&z=16&output=embed'
   },
 ];
+
 
 
 
