@@ -23,9 +23,9 @@ const SHOPS = [
     name: 'green Bakery',
     genre: 'cafe',
     area: 'inside',
-    img: 'image_greenBakery.jpg',
+    img: 'img/image_greenBakery.jpg',
     gallery: [
-      'image_greenBakery.jpg',
+      'img/image_greenBakery.jpg',
       'img/外観.jpg'
     ],
     hours: '10:00〜17:00',
@@ -40,9 +40,9 @@ const SHOPS = [
     name: '歴史を刻め',
     genre: 'ラーメン',
     area: 'outside',
-    img: 'image_rekishiwokizame.jpg',
+    img: 'img/image_rekishiwokizame.jpg',
     gallery: [
-      'image_rekishiwokizame.jpg',
+      'img/image_rekishiwokizame.jpg',
       'img/外観.jpg'
     ],
     hours: '9:00〜18:00',
@@ -57,9 +57,9 @@ const SHOPS = [
     name: '焼き鳥居酒屋　天乃城',
     genre: '居酒屋',
     area: 'outside',
-    img: 'image_TenNoShiro.jpg',
+    img: 'img/image_TenNoShiro.jpg',
     gallery: [
-      'image_TenNoShiro.jpg',
+      'img/image_TenNoShiro.jpg',
       'img/外観.jpg'
     ],
     hours: '11:30〜14:00',
@@ -74,9 +74,9 @@ const SHOPS = [
     name: 'Golden Daze',
     genre: 'cafe',
     area: 'outside',
-    img: 'image_GoldenDaze.jpg',
+    img: 'img/image_GoldenDaze.jpg',
     gallery: [
-      'image_GoldenDaze.jpg',
+      'img/image_GoldenDaze.jpg',
       'img/外観.jpg'
     ],
     hours: '11:00〜21:00',
@@ -91,9 +91,9 @@ const SHOPS = [
     name: 'チーケバブ',
     genre: '屋台',
     area: 'outside', // 'inside' or 'outside'
-    img: 'image_tiikebabu.jpg', // 一覧カード用のサムネ
+    img: 'img/image_tiikebabu.jpg', // 一覧カード用のサムネ
     gallery: [
-      'image_tiikebabu.jpg',
+      'img/image_tiikebabu.jpg',
       'img/外観.jpg'
     ],
     hours: '11:00〜20:00',
@@ -324,6 +324,7 @@ const SHOPS = [
       'https://www.google.com/maps?q=横浜家系ラーメン英吉家 名古屋市天白区塩釜口２丁目８０１&hl=ja&z=16&output=embed'
   },
 ];
+
 
 
 
