@@ -20,8 +20,8 @@ const SHOPS = [
 
   {
     id: 2,
-    name: '学食カフェ',
-    genre: '定食',
+    name: 'green Bakery',
+    genre: 'cafe',
     area: 'inside',
     img: 'img/外観.jpg',
     gallery: [
@@ -29,24 +29,24 @@ const SHOPS = [
       'img/Top.jpg'
     ],
     hours: '10:00〜17:00',
-    place: '名城大学内 食堂エリア',
-    desc: '学生向け価格でボリュームのある定食が楽しめます。',
+    place: '名城大学内',
+    desc: 'とりあえずあとで',
     mapUrl:
       'https://www.google.com/maps?q=名城大学&hl=ja&z=16&output=embed'
   },
 
   {
     id: 3,
-    name: 'コモンホール',
-    genre: 'カフェ',
-    area: 'inside',
+    name: '歴史を刻め',
+    genre: 'ラーメン',
+    area: 'outside',
     img: 'img/Top.jpg',
     gallery: [
       'img/Top.jpg',
       'img/外観.jpg'
     ],
     hours: '9:00〜18:00',
-    place: '名城大学内 カフェスペース',
+    place: '名城大学内外',
     desc: 'コーヒーや軽食で友達とゆっくりできるスペースです。',
     mapUrl:
       'https://www.google.com/maps?q=名城大学&hl=ja&z=16&output=embed'
@@ -54,8 +54,8 @@ const SHOPS = [
 
   {
     id: 4,
-    name: '屋台タコス',
-    genre: '屋台',
+    name: '焼き鳥居酒屋　天乃城',
+    genre: '居酒屋',
     area: 'outside',
     img: 'img/外観.jpg',
     gallery: [
@@ -71,8 +71,8 @@ const SHOPS = [
 
   {
     id: 5,
-    name: '定食すぎだま',
-    genre: '定食',
+    name: 'Golden Daze',
+    genre: 'cafe',
     area: 'outside',
     img: 'img/Top.jpg',
     gallery: [
@@ -88,7 +88,24 @@ const SHOPS = [
 
   {
     id: 6,
-    name: '英吉家',
+    name: 'チーケバブ',
+    genre: '屋台',
+    area: 'outside', // 'inside' or 'outside'
+    img: 'img/hideyoshi.jpg', // 一覧カード用のサムネ
+    gallery: [
+      'img/hideyoshi.jpg',
+      'img/外観.jpg'
+    ],
+    hours: '11:00〜20:00',
+    place: '名城大学 東門から徒歩1分（仮）',
+    desc: '自家製スープが売りのラーメン店です。',
+    mapUrl:
+      'https://www.google.com/maps?q=横浜家系ラーメン英吉家 名古屋市天白区塩釜口２丁目８０１&hl=ja&z=16&output=embed'
+  },
+
+   {
+    id: 7,
+    name: 'らーめん六弦',
     genre: 'ラーメン',
     area: 'outside', // 'inside' or 'outside'
     img: 'img/hideyoshi.jpg', // 一覧カード用のサムネ
@@ -103,7 +120,211 @@ const SHOPS = [
       'https://www.google.com/maps?q=横浜家系ラーメン英吉家 名古屋市天白区塩釜口２丁目８０１&hl=ja&z=16&output=embed'
   },
 
+   {
+    id: 8,
+    name: '韵茶空間YUNCHA',
+    genre: 'タピオカ',
+    area: 'outside', // 'inside' or 'outside'
+    img: 'img/hideyoshi.jpg', // 一覧カード用のサムネ
+    gallery: [
+      'img/hideyoshi.jpg',
+      'img/外観.jpg'
+    ],
+    hours: '11:00〜20:00',
+    place: '名城大学 東門から徒歩1分（仮）',
+    desc: '自家製スープが売りのラーメン店です。',
+    mapUrl:
+      'https://www.google.com/maps?q=横浜家系ラーメン英吉家 名古屋市天白区塩釜口２丁目８０１&hl=ja&z=16&output=embed'
+  },
+
+  {
+    id: 9,
+    name: '中華料理 鑫林',
+    genre: '中華料理',
+    area: 'outside', // 'inside' or 'outside'
+    img: 'img/hideyoshi.jpg', // 一覧カード用のサムネ
+    gallery: [
+      'img/hideyoshi.jpg',
+      'img/外観.jpg'
+    ],
+    hours: '11:00〜20:00',
+    place: '名城大学 東門から徒歩1分（仮）',
+    desc: '自家製スープが売りのラーメン店です。',
+    mapUrl:
+      'https://www.google.com/maps?q=横浜家系ラーメン英吉家 名古屋市天白区塩釜口２丁目８０１&hl=ja&z=16&output=embed'
+  },
+
+  {
+    id: 10,
+    name: '新時代',
+    genre: '居酒屋',
+    area: 'outside', // 'inside' or 'outside'
+    img: 'img/hideyoshi.jpg', // 一覧カード用のサムネ
+    gallery: [
+      'img/hideyoshi.jpg',
+      'img/外観.jpg'
+    ],
+    hours: '11:00〜20:00',
+    place: '名城大学 東門から徒歩1分（仮）',
+    desc: '自家製スープが売りのラーメン店です。',
+    mapUrl:
+      'https://www.google.com/maps?q=横浜家系ラーメン英吉家 名古屋市天白区塩釜口２丁目８０１&hl=ja&z=16&output=embed'
+  },
+
+  {
+    id: 11,
+    name: '三代目　鳥メロ',
+    genre: '居酒屋',
+    area: 'outside', // 'inside' or 'outside'
+    img: 'img/hideyoshi.jpg', // 一覧カード用のサムネ
+    gallery: [
+      'img/hideyoshi.jpg',
+      'img/外観.jpg'
+    ],
+    hours: '11:00〜20:00',
+    place: '名城大学 東門から徒歩1分（仮）',
+    desc: '自家製スープが売りのラーメン店です。',
+    mapUrl:
+      'https://www.google.com/maps?q=横浜家系ラーメン英吉家 名古屋市天白区塩釜口２丁目８０１&hl=ja&z=16&output=embed'
+  },
+
+  {
+    id: 12,
+    name: '中華料理来来',
+    genre: '中華料理',
+    area: 'outside', // 'inside' or 'outside'
+    img: 'img/hideyoshi.jpg', // 一覧カード用のサムネ
+    gallery: [
+      'img/hideyoshi.jpg',
+      'img/外観.jpg'
+    ],
+    hours: '11:00〜20:00',
+    place: '名城大学 東門から徒歩1分（仮）',
+    desc: '自家製スープが売りのラーメン店です。',
+    mapUrl:
+      'https://www.google.com/maps?q=横浜家系ラーメン英吉家 名古屋市天白区塩釜口２丁目８０１&hl=ja&z=16&output=embed'
+  },
+
+  {
+    id: 13,
+    name: '気をつけろ！女心と体脂肪',
+    genre: '居酒屋',
+    area: 'outside', // 'inside' or 'outside'
+    img: 'img/hideyoshi.jpg', // 一覧カード用のサムネ
+    gallery: [
+      'img/hideyoshi.jpg',
+      'img/外観.jpg'
+    ],
+    hours: '11:00〜20:00',
+    place: '名城大学 東門から徒歩1分（仮）',
+    desc: '自家製スープが売りのラーメン店です。',
+    mapUrl:
+      'https://www.google.com/maps?q=横浜家系ラーメン英吉家 名古屋市天白区塩釜口２丁目８０１&hl=ja&z=16&output=embed'
+  },
+
+  {
+    id: 14,
+    name: '東京油そば本舗',
+    genre: '油そば',
+    area: 'outside', // 'inside' or 'outside'
+    img: 'img/hideyoshi.jpg', // 一覧カード用のサムネ
+    gallery: [
+      'img/hideyoshi.jpg',
+      'img/外観.jpg'
+    ],
+    hours: '11:00〜20:00',
+    place: '名城大学 東門から徒歩1分（仮）',
+    desc: '自家製スープが売りのラーメン店です。',
+    mapUrl:
+      'https://www.google.com/maps?q=横浜家系ラーメン英吉家 名古屋市天白区塩釜口２丁目８０１&hl=ja&z=16&output=embed'
+  },
+
+  {
+    id: 15,
+    name: 'CORO CORO',
+    genre: 'お弁当',
+    area: 'outside', // 'inside' or 'outside'
+    img: 'img/hideyoshi.jpg', // 一覧カード用のサムネ
+    gallery: [
+      'img/hideyoshi.jpg',
+      'img/外観.jpg'
+    ],
+    hours: '11:00〜20:00',
+    place: '名城大学 東門から徒歩1分（仮）',
+    desc: '自家製スープが売りのラーメン店です。',
+    mapUrl:
+      'https://www.google.com/maps?q=横浜家系ラーメン英吉家 名古屋市天白区塩釜口２丁目８０１&hl=ja&z=16&output=embed'
+  },
+
+  {
+    id: 16,
+    name: 'MUNCHIES STAND',
+    genre: 'タコス',
+    area: 'outside', // 'inside' or 'outside'
+    img: 'img/hideyoshi.jpg', // 一覧カード用のサムネ
+    gallery: [
+      'img/hideyoshi.jpg',
+      'img/外観.jpg'
+    ],
+    hours: '11:00〜20:00',
+    place: '名城大学 東門から徒歩1分（仮）',
+    desc: '自家製スープが売りのラーメン店です。',
+    mapUrl:
+      'https://www.google.com/maps?q=横浜家系ラーメン英吉家 名古屋市天白区塩釜口２丁目８０１&hl=ja&z=16&output=embed'
+  },
+
+  {
+    id: 17,
+    name: 'レストラン金鯱',
+    genre: '定食屋',
+    area: 'outside', // 'inside' or 'outside'
+    img: 'img/hideyoshi.jpg', // 一覧カード用のサムネ
+    gallery: [
+      'img/hideyoshi.jpg',
+      'img/外観.jpg'
+    ],
+    hours: '11:00〜20:00',
+    place: '名城大学 東門から徒歩1分（仮）',
+    desc: '自家製スープが売りのラーメン店です。',
+    mapUrl:
+      'https://www.google.com/maps?q=横浜家系ラーメン英吉家 名古屋市天白区塩釜口２丁目８０１&hl=ja&z=16&output=embed'
+  },
+
+  {
+    id: 18,
+    name: 'グラン亭ミラノ',
+    genre: '居酒屋',
+    area: 'outside', // 'inside' or 'outside'
+    img: 'img/hideyoshi.jpg', // 一覧カード用のサムネ
+    gallery: [
+      'img/hideyoshi.jpg',
+      'img/外観.jpg'
+    ],
+    hours: '11:00〜20:00',
+    place: '名城大学 東門から徒歩1分（仮）',
+    desc: '自家製スープが売りのラーメン店です。',
+    mapUrl:
+      'https://www.google.com/maps?q=横浜家系ラーメン英吉家 名古屋市天白区塩釜口２丁目８０１&hl=ja&z=16&output=embed'
+  },
+
+  {
+    id: 19,
+    name: '学内食堂',
+    genre: '居酒屋',
+    area: 'outside', // 'inside' or 'outside'
+    img: 'img/hideyoshi.jpg', // 一覧カード用のサムネ
+    gallery: [
+      'img/hideyoshi.jpg',
+      'img/外観.jpg'
+    ],
+    hours: '11:00〜20:00',
+    place: '名城大学 東門から徒歩1分（仮）',
+    desc: '自家製スープが売りのラーメン店です。',
+    mapUrl:
+      'https://www.google.com/maps?q=横浜家系ラーメン英吉家 名古屋市天白区塩釜口２丁目８０１&hl=ja&z=16&output=embed'
+  },
 ];
+
 
 
 
