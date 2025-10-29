@@ -54,7 +54,7 @@ const SHOPS = [
 
   {
     id: 4,
-    name: '焼き鳥居酒屋　天乃城',
+    name: '焼き鳥居酒屋<br>　天乃城',
     genre: '居酒屋',
     area: 'outside',
     img: 'img/image_TenNoShiro.jpg',
@@ -324,6 +324,7 @@ const SHOPS = [
       'https://www.google.com/maps?q=名城食堂 愛知県名古屋市天白区塩釜口１丁目５０１&hl=ja&z=16&output=embed'
   },
 ];
+
 
 
 
