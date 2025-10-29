@@ -294,7 +294,7 @@ const SHOPS = [
     id: 18,
     name: 'グラン亭ミラノ',
     genre: '居酒屋',
-    area: 'outside', // 'inside' or 'outside'
+    area: 'inside', // 'inside' or 'outside'
     img: 'img/image_guranteiMirano.jpg', // 一覧カード用のサムネ
     gallery: [
       'img/image_guranteiMirano.jpg',
@@ -311,7 +311,7 @@ const SHOPS = [
     id: 19,
     name: '学内食堂',
     genre: '居酒屋',
-    area: 'outside', // 'inside' or 'outside'
+    area: 'inside', // 'inside' or 'outside'
     img: 'img/image_SeikyoShokudo.jpg', // 一覧カード用のサムネ
     gallery: [
       'img/image_SeikyoShokudo.jpg',
@@ -324,6 +324,7 @@ const SHOPS = [
       'https://www.google.com/maps?q=横浜家系ラーメン英吉家 名古屋市天白区塩釜口２丁目８０１&hl=ja&z=16&output=embed'
   },
 ];
+
 
 
 
