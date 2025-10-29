@@ -47,7 +47,7 @@ const SHOPS = [
     ],
     hours: '9:00〜18:00',
     place: '名城大学内外',
-    desc: 'コーヒーや軽食で友達とゆっくりできるスペースです。',
+    desc: 'えっぐい並ぶ次郎系ラーメン',
     mapUrl:
       'https://www.google.com/maps?q=名城大学&hl=ja&z=16&output=embed'
   },
@@ -63,8 +63,8 @@ const SHOPS = [
       'img/外観.jpg'
     ],
     hours: '11:30〜14:00',
-    place: '大学近くの通り沿い（屋台）',
-    desc: 'スパイシーなタコスで人気の屋台です。',
+    place: '大学近く',
+    desc: 'なんの変哲もない居酒屋だよーん',
     mapUrl:
       'https://www.google.com/maps?q=名城大学&hl=ja&z=16&output=embed'
   },
@@ -81,7 +81,7 @@ const SHOPS = [
     ],
     hours: '11:00〜21:00',
     place: '名城大学 周辺エリア',
-    desc: '家庭的な味付けの定食が人気です。',
+    desc: 'よーしりません',
     mapUrl:
       'https://www.google.com/maps?q=名城大学&hl=ja&z=16&output=embed'
   },
@@ -96,9 +96,9 @@ const SHOPS = [
       'img/image_tiikebabu.jpg',
       'img/外観.jpg'
     ],
-    hours: '11:00〜20:00',
-    place: '名城大学 東門から徒歩1分（仮）',
-    desc: '自家製スープが売りのラーメン店です。',
+    hours: '',
+    place: '名城大学外',
+    desc: '俺ケバブ食ったことない',
     mapUrl:
       'https://www.google.com/maps?q=横浜家系ラーメン英吉家 名古屋市天白区塩釜口２丁目８０１&hl=ja&z=16&output=embed'
   },
@@ -114,7 +114,7 @@ const SHOPS = [
       'img/外観.jpg'
     ],
     hours: '11:00〜20:00',
-    place: '名城大学 東門から徒歩1分（仮）',
+    place: '名城大学外',
     desc: '自家製スープが売りのラーメン店です。',
     mapUrl:
       'https://www.google.com/maps?q=横浜家系ラーメン英吉家 名古屋市天白区塩釜口２丁目８０１&hl=ja&z=16&output=embed'
@@ -131,8 +131,8 @@ const SHOPS = [
       'img/外観.jpg'
     ],
     hours: '11:00〜20:00',
-    place: '名城大学 東門から徒歩1分（仮）',
-    desc: '自家製スープが売りのラーメン店です。',
+    place: '名城大学外',
+    desc: 'ドリンク',
     mapUrl:
       'https://www.google.com/maps?q=横浜家系ラーメン英吉家 名古屋市天白区塩釜口２丁目８０１&hl=ja&z=16&output=embed'
   },
@@ -148,8 +148,8 @@ const SHOPS = [
       'img/外観.jpg'
     ],
     hours: '11:00〜20:00',
-    place: '名城大学 東門から徒歩1分（仮）',
-    desc: '自家製スープが売りのラーメン店です。',
+    place: '名城大学外）',
+    desc: 'なんの変哲もない中華＾＾料理',
     mapUrl:
       'https://www.google.com/maps?q=横浜家系ラーメン英吉家 名古屋市天白区塩釜口２丁目８０１&hl=ja&z=16&output=embed'
   },
@@ -165,8 +165,8 @@ const SHOPS = [
       'img/外観.jpg'
     ],
     hours: '11:00〜20:00',
-    place: '名城大学 東門から徒歩1分（仮）',
-    desc: '自家製スープが売りのラーメン店です。',
+    place: '名城大学外',
+    desc: 'エッグい居酒屋',
     mapUrl:
       'https://www.google.com/maps?q=横浜家系ラーメン英吉家 名古屋市天白区塩釜口２丁目８０１&hl=ja&z=16&output=embed'
   },
@@ -182,8 +182,8 @@ const SHOPS = [
       'img/外観.jpg'
     ],
     hours: '11:00〜20:00',
-    place: '名城大学 東門から徒歩1分（仮）',
-    desc: '自家製スープが売りのラーメン店です。',
+    place: '名城大学外',
+    desc: 'どう考えても焼き鳥屋やん',
     mapUrl:
       'https://www.google.com/maps?q=横浜家系ラーメン英吉家 名古屋市天白区塩釜口２丁目８０１&hl=ja&z=16&output=embed'
   },
@@ -199,8 +199,8 @@ const SHOPS = [
       'img/外観.jpg'
     ],
     hours: '11:00〜20:00',
-    place: '名城大学 東門から徒歩1分（仮）',
-    desc: '自家製スープが売りのラーメン店です。',
+    place: '名城大学外',
+    desc: 'もう見たこともない',
     mapUrl:
       'https://www.google.com/maps?q=横浜家系ラーメン英吉家 名古屋市天白区塩釜口２丁目８０１&hl=ja&z=16&output=embed'
   },
@@ -216,8 +216,8 @@ const SHOPS = [
       'img/外観.jpg'
     ],
     hours: '11:00〜20:00',
-    place: '名城大学 東門から徒歩1分（仮）',
-    desc: '自家製スープが売りのラーメン店です。',
+    place: '名城大学外',
+    desc: '女心は気を付けても無駄',
     mapUrl:
       'https://www.google.com/maps?q=横浜家系ラーメン英吉家 名古屋市天白区塩釜口２丁目８０１&hl=ja&z=16&output=embed'
   },
@@ -227,14 +227,14 @@ const SHOPS = [
     name: '東京油そば本舗',
     genre: '油そば',
     area: 'outside', // 'inside' or 'outside'
-    img: 'img/hideyoshi.jpg', // 一覧カード用のサムネ
+    img: 'img/image_TokyoAburasoba.jpg', // 一覧カード用のサムネ
     gallery: [
-      'img/hideyoshi.jpg',
+      'img/image_TokyoAburasoba.jpg',
       'img/外観.jpg'
     ],
     hours: '11:00〜20:00',
-    place: '名城大学 東門から徒歩1分（仮）',
-    desc: '自家製スープが売りのラーメン店です。',
+    place: '名城大学外',
+    desc: '一番油そば',
     mapUrl:
       'https://www.google.com/maps?q=横浜家系ラーメン英吉家 名古屋市天白区塩釜口２丁目８０１&hl=ja&z=16&output=embed'
   },
@@ -324,6 +324,7 @@ const SHOPS = [
       'https://www.google.com/maps?q=横浜家系ラーメン英吉家 名古屋市天白区塩釜口２丁目８０１&hl=ja&z=16&output=embed'
   },
 ];
+
 
 
 
