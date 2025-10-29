@@ -108,9 +108,9 @@ const SHOPS = [
     name: 'らーめん六弦',
     genre: 'ラーメン',
     area: 'outside', // 'inside' or 'outside'
-    img: 'image_RamenMugen.jpg', // 一覧カード用のサムネ
+    img: 'img/image_RamenMugen.jpg', // 一覧カード用のサムネ
     gallery: [
-      'image_RamenMugen.jpg',
+      'img/image_RamenMugen.jpg',
       'img/外観.jpg'
     ],
     hours: '11:00〜20:00',
@@ -125,9 +125,9 @@ const SHOPS = [
     name: '韵茶空間YUNCHA',
     genre: 'タピオカ',
     area: 'outside', // 'inside' or 'outside'
-    img: 'image_yuncha.jpg', // 一覧カード用のサムネ
+    img: 'img/image_yuncha.jpg', // 一覧カード用のサムネ
     gallery: [
-      'image_yuncha.jpg',
+      'img/image_yuncha.jpg',
       'img/外観.jpg'
     ],
     hours: '11:00〜20:00',
@@ -142,9 +142,9 @@ const SHOPS = [
     name: '中華料理 鑫林',
     genre: '中華料理',
     area: 'outside', // 'inside' or 'outside'
-    img: 'image_shinrin.jpg', // 一覧カード用のサムネ
+    img: 'img/image_shinrin.jpg', // 一覧カード用のサムネ
     gallery: [
-      'image_shinrin.jpg',
+      'img/image_shinrin.jpg',
       'img/外観.jpg'
     ],
     hours: '11:00〜20:00',
@@ -159,9 +159,9 @@ const SHOPS = [
     name: '新時代',
     genre: '居酒屋',
     area: 'outside', // 'inside' or 'outside'
-    img: 'image_ShinjidaiShiogamaguchiEkiMae.jpg', // 一覧カード用のサムネ
+    img: 'img/image_ShinjidaiShiogamaguchiEkiMae.jpg', // 一覧カード用のサムネ
     gallery: [
-      'image_ShinjidaiShiogamaguchiEkiMae.jpg',
+      'img/image_ShinjidaiShiogamaguchiEkiMae.jpg',
       'img/外観.jpg'
     ],
     hours: '11:00〜20:00',
@@ -176,9 +176,9 @@ const SHOPS = [
     name: '三代目　鳥メロ',
     genre: '居酒屋',
     area: 'outside', // 'inside' or 'outside'
-    img: 'image_SandaimeTorimero.jpg', // 一覧カード用のサムネ
+    img: 'img/image_SandaimeTorimero.jpg', // 一覧カード用のサムネ
     gallery: [
-      'image_SandaimeTorimero.jpg',
+      'img/image_SandaimeTorimero.jpg',
       'img/外観.jpg'
     ],
     hours: '11:00〜20:00',
@@ -193,9 +193,9 @@ const SHOPS = [
     name: '中華料理来来',
     genre: '中華料理',
     area: 'outside', // 'inside' or 'outside'
-    img: 'image_rairai.jpg', // 一覧カード用のサムネ
+    img: 'img/image_rairai.jpg', // 一覧カード用のサムネ
     gallery: [
-      'image_rairai.jpg',
+      'img/image_rairai.jpg',
       'img/外観.jpg'
     ],
     hours: '11:00〜20:00',
@@ -210,9 +210,9 @@ const SHOPS = [
     name: '気をつけろ！女心と体脂肪',
     genre: '居酒屋',
     area: 'outside', // 'inside' or 'outside'
-    img: 'image_Parsley.jpg', // 一覧カード用のサムネ
+    img: 'img/image_Parsley.jpg', // 一覧カード用のサムネ
     gallery: [
-      'image_Parsley.jpg',
+      'img/image_Parsley.jpg',
       'img/外観.jpg'
     ],
     hours: '11:00〜20:00',
@@ -324,6 +324,7 @@ const SHOPS = [
       'https://www.google.com/maps?q=横浜家系ラーメン英吉家 名古屋市天白区塩釜口２丁目８０１&hl=ja&z=16&output=embed'
   },
 ];
+
 
 
 
