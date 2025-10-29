@@ -25,8 +25,7 @@ const SHOPS = [
     area: 'inside',
     img: 'img/image_greenBakery.jpg',
     gallery: [
-      'img/image_greenBakery.jpg',
-      'img/外観.jpg'
+      'img/image_greenBakery.jpg'
     ],
     hours: '10:00〜17:00',
     place: '名城大学内',
@@ -324,6 +323,7 @@ const SHOPS = [
       'https://www.google.com/maps?q=名城食堂 愛知県名古屋市天白区塩釜口１丁目５０１&hl=ja&z=16&output=embed'
   },
 ];
+
 
 
 
