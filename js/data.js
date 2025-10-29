@@ -8,8 +8,7 @@ const SHOPS = [
     area: 'outside', // 'inside'か'outside'を記入（学内か学外）
     img: 'img/hideyoshi.jpg', // サムネ写真
     gallery: [
-      'img/hideyoshi.jpg',
-      'img/外観.jpg'
+      'img/hideyoshi.jpg'
     ], // ギャラリー写真
     hours: '11:00〜20:00', // 営業時間
     place: '名城大学 東門から徒歩1分（仮）', // 場所の説明
@@ -233,7 +232,7 @@ const SHOPS = [
     area: 'outside', // 'inside' or 'outside'
     img: 'img/image_corocoro.jpg', // 一覧カード用のサムネ
     gallery: [
-      'img/image_corocoro.jpg
+      'img/image_corocoro.jpg'
     ],
     hours: '後日記入',
     place: '名城大学外',
@@ -306,6 +305,7 @@ const SHOPS = [
       'https://www.google.com/maps?q=名城食堂 愛知県名古屋市天白区塩釜口１丁目５０１&hl=ja&z=16&output=embed'
   },
 ];
+
 
 
 
