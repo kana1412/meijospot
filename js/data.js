@@ -32,7 +32,7 @@ const SHOPS = [
     place: '名城大学内',
     desc: '後日記入',
     mapUrl:
-      'https://www.google.com/maps?q=名城大学&hl=ja&z=16&output=embed'
+      'https://www.google.com/maps?q=green bakery BOOK CAFE 愛知県名古屋市天白区塩釜口1−５０１&hl=ja&z=16&output=embed'
   },
 
   {
@@ -49,7 +49,7 @@ const SHOPS = [
     place: '名城大学内外',
     desc: '後日記入',
     mapUrl:
-      'https://www.google.com/maps?q=名城大学&hl=ja&z=16&output=embed'
+      'https://www.google.com/maps?q=ラーメン荘 歴史を刻め 八事店 愛知県名古屋市天白区八事山５２８&hl=ja&z=16&output=embed'
   },
 
   {
@@ -66,7 +66,7 @@ const SHOPS = [
     place: '大学近く',
     desc: '後日記入',
     mapUrl:
-      'https://www.google.com/maps?q=名城大学&hl=ja&z=16&output=embed'
+      'https://www.google.com/maps?q=天乃城 愛知県名古屋市天白区塩釜口１丁目６３３−１&hl=ja&z=16&output=embed'
   },
 
   {
@@ -83,7 +83,7 @@ const SHOPS = [
     place: '名城大学 周辺エリア',
     desc: '後日記入',
     mapUrl:
-      'https://www.google.com/maps?q=名城大学&hl=ja&z=16&output=embed'
+      'https://www.google.com/maps?q=Golden Daze 愛知県名古屋市天白区八幡山１２０８ メゾン八事 101&hl=ja&z=16&output=embed'
   },
 
   {
@@ -100,7 +100,7 @@ const SHOPS = [
     place: '名城大学外',
     desc: '後日記入',
     mapUrl:
-      'https://www.google.com/maps?q=横浜家系ラーメン英吉家 名古屋市天白区塩釜口２丁目８０１&hl=ja&z=16&output=embed'
+      'https://www.google.com/maps?q=チーケバブ塩釜口店 愛知県名古屋市天白区塩釜口１丁目６５２−１ 塩釜ビル １F東 アリュール&hl=ja&z=16&output=embed'
   },
 
    {
@@ -117,7 +117,7 @@ const SHOPS = [
     place: '名城大学外',
     desc: '後日記入',
     mapUrl:
-      'https://www.google.com/maps?q=横浜家系ラーメン英吉家 名古屋市天白区塩釜口２丁目８０１&hl=ja&z=16&output=embed'
+      'https://www.google.com/maps?q=らーめん六弦 愛知県名古屋市天白区八幡山１２１８ 三恵ビル&hl=ja&z=16&output=embed'
   },
 
    {
@@ -134,7 +134,7 @@ const SHOPS = [
     place: '名城大学外',
     desc: '後日記入',
     mapUrl:
-      'https://www.google.com/maps?q=横浜家系ラーメン英吉家 名古屋市天白区塩釜口２丁目８０１&hl=ja&z=16&output=embed'
+      'https://www.google.com/maps?q=韵茶空間YUNCHA 三恵ビル tennpakukuhachimannyama1218, １２１８ 八幡山 天白区 名古屋市 愛知県&hl=ja&z=16&output=embed'
   },
 
   {
@@ -151,7 +151,7 @@ const SHOPS = [
     place: '名城大学外）',
     desc: '後日記入',
     mapUrl:
-      'https://www.google.com/maps?q=横浜家系ラーメン英吉家 名古屋市天白区塩釜口２丁目８０１&hl=ja&z=16&output=embed'
+      'https://www.google.com/maps?q=中華料理 鑫林 1MYビル, 1階, １３３２ 八幡山 天白区 名古屋市 愛知県&hl=ja&z=16&output=embed'
   },
 
   {
@@ -168,7 +168,7 @@ const SHOPS = [
     place: '名城大学外',
     desc: '後日記入',
     mapUrl:
-      'https://www.google.com/maps?q=横浜家系ラーメン英吉家 名古屋市天白区塩釜口２丁目８０１&hl=ja&z=16&output=embed'
+      'https://www.google.com/maps?q=新時代 塩釜口駅前店 愛知県名古屋市天白区元八事４丁目７７&hl=ja&z=16&output=embed'
   },
 
   {
@@ -185,7 +185,7 @@ const SHOPS = [
     place: '名城大学外',
     desc: '後日記入',
     mapUrl:
-      'https://www.google.com/maps?q=横浜家系ラーメン英吉家 名古屋市天白区塩釜口２丁目８０１&hl=ja&z=16&output=embed'
+      'https://www.google.com/maps?q=三代目鳥メロ 塩釜口駅前店 愛知県名古屋市天白区塩釜口２丁目１５０１ フェイム塩釜 2F&hl=ja&z=16&output=embed'
   },
 
   {
@@ -202,12 +202,12 @@ const SHOPS = [
     place: '名城大学外',
     desc: '後日記入',
     mapUrl:
-      'https://www.google.com/maps?q=横浜家系ラーメン英吉家 名古屋市天白区塩釜口２丁目８０１&hl=ja&z=16&output=embed'
+      'https://www.google.com/maps?q=中華料理来来 愛知県名古屋市天白区塩釜口２丁目１５０１&hl=ja&z=16&output=embed'
   },
 
   {
     id: 13,
-    name: '気をつけろ！女心と体脂肪',
+    name: '洋食工房パセリ',
     genre: '居酒屋',
     area: 'outside', // 'inside' or 'outside'
     img: 'img/image_Parsley.jpg', // 一覧カード用のサムネ
@@ -219,7 +219,7 @@ const SHOPS = [
     place: '名城大学外',
     desc: '後日記入',
     mapUrl:
-      'https://www.google.com/maps?q=横浜家系ラーメン英吉家 名古屋市天白区塩釜口２丁目８０１&hl=ja&z=16&output=embed'
+      'https://www.google.com/maps?q=洋食工房パセリ 愛知県名古屋市天白区塩釜口２丁目１５０１ フェイム塩釜 １F&hl=ja&z=16&output=embed'
   },
 
   {
@@ -236,12 +236,12 @@ const SHOPS = [
     place: '名城大学外',
     desc: '後日記入',
     mapUrl:
-      'https://www.google.com/maps?q=横浜家系ラーメン英吉家 名古屋市天白区塩釜口２丁目８０１&hl=ja&z=16&output=embed'
+      'https://www.google.com/maps?q=東京油そば本舗 名古屋総本店 愛知県名古屋市天白区塩釜口２丁目２−９０６&hl=ja&z=16&output=embed'
   },
 
   {
     id: 15,
-    name: 'CORO CORO',
+    name: 'お弁当コロコロ',
     genre: 'お弁当',
     area: 'outside', // 'inside' or 'outside'
     img: 'img/image_corocoro.jpg', // 一覧カード用のサムネ
@@ -253,12 +253,12 @@ const SHOPS = [
     place: '名城大学外',
     desc: '後日記入',
     mapUrl:
-      'https://www.google.com/maps?q=横浜家系ラーメン英吉家 名古屋市天白区塩釜口２丁目８０１&hl=ja&z=16&output=embed'
+      'https://www.google.com/maps?q=お弁当コロコロ 愛知県名古屋市天白区塩釜口２丁目１０１５ おりぃぶ荘 1F&hl=ja&z=16&output=embed'
   },
 
   {
     id: 16,
-    name: 'MUNCHIES STAND',
+    name: 'マンチーズスタンド',
     genre: 'タコス',
     area: 'outside', // 'inside' or 'outside'
     img: 'img/image_MuchiesStand.jpg', // 一覧カード用のサムネ
@@ -270,12 +270,12 @@ const SHOPS = [
     place: '名城大学外',
     desc: '後日記入',
     mapUrl:
-      'https://www.google.com/maps?q=横浜家系ラーメン英吉家 名古屋市天白区塩釜口２丁目８０１&hl=ja&z=16&output=embed'
+      'https://www.google.com/maps?q=マンチーズスタンド 愛知県名古屋市天白区塩釜口２丁目２−１００１&hl=ja&z=16&output=embed'
   },
 
   {
     id: 17,
-    name: 'レストラン金鯱',
+    name: 'レストラン金鯱 天白店',
     genre: '定食屋',
     area: 'outside', // 'inside' or 'outside'
     img: 'img/image_kinko.jpg', // 一覧カード用のサムネ
@@ -287,7 +287,7 @@ const SHOPS = [
     place: '名城大学外',
     desc: '後日記入',
     mapUrl:
-      'https://www.google.com/maps?q=横浜家系ラーメン英吉家 名古屋市天白区塩釜口２丁目８０１&hl=ja&z=16&output=embed'
+      'https://www.google.com/maps?q=レストラン金鯱 天白店 愛知県名古屋市天白区塩釜口２丁目８０１&hl=ja&z=16&output=embed'
   },
 
   {
@@ -304,12 +304,12 @@ const SHOPS = [
     place: '名城大学内',
     desc: '後日記入',
     mapUrl:
-      'https://www.google.com/maps?q=横浜家系ラーメン英吉家 名古屋市天白区塩釜口２丁目８０１&hl=ja&z=16&output=embed'
+      'https://www.google.com/maps?q=名城大学天白キャンパス グラン亭ミラノ 愛知県名古屋市天白区塩釜口１丁目５０１&hl=ja&z=16&output=embed'
   },
 
   {
     id: 19,
-    name: '学内食堂',
+    name: '名城食堂',
     genre: '居酒屋',
     area: 'inside', // 'inside' or 'outside'
     img: 'img/image_SeikyoShokudo.jpg', // 一覧カード用のサムネ
@@ -321,9 +321,10 @@ const SHOPS = [
     place: '名城大学内',
     desc: '後日記入',
     mapUrl:
-      'https://www.google.com/maps?q=横浜家系ラーメン英吉家 名古屋市天白区塩釜口２丁目８０１&hl=ja&z=16&output=embed'
+      'https://www.google.com/maps?q=名城食堂 愛知県名古屋市天白区塩釜口１丁目５０１&hl=ja&z=16&output=embed'
   },
 ];
+
 
 
 
