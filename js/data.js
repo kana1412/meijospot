@@ -20,7 +20,7 @@ const SHOPS = [
   {
     id: 2,
     name: 'green Bakery',
-    genre: 'cafe',
+    genre: 'カフェ',
     area: 'inside',
     img: 'img/image_greenBakery.jpg',
     gallery: [
@@ -68,7 +68,7 @@ const SHOPS = [
   {
     id: 5,
     name: 'Golden Daze',
-    genre: 'cafe',
+    genre: 'カフェ',
     area: 'outside',
     img: 'img/image_GoldenDaze.jpg',
     gallery: [
@@ -307,6 +307,7 @@ const SHOPS = [
       'https://www.google.com/maps?q=名城食堂 愛知県名古屋市天白区塩釜口１丁目５０１&hl=ja&z=16&output=embed'
   },
 ];
+
 
 
 
