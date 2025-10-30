@@ -162,3 +162,7 @@ a { color: inherit; text-decoration: none; }
   margin: 3px auto 0; /* ← 距離を近づけるポイント */
   border-radius: 3px;
 }
+
+#map {
+  z-index: 0; /* 地図を最背面に */
+}
