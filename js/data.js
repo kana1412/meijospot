@@ -296,9 +296,11 @@ const SHOPS = [
     name: '名城食堂',
     genre: '居酒屋',
     area: 'inside', // 'inside' or 'outside'
-    img: 'img/image_SeikyoShokudo.jpg', // 一覧カード用のサムネ
+    // img: 'img/image_SeikyoShokudo.jpg', // 一覧カード用のサムネ
+    img: 'img/sample.png',
     gallery: [
-      'img/image_SeikyoShokudo.jpg'
+      // 'img/image_SeikyoShokudo.jpg'
+      'img/sample.png'
     ],
     hours: '後日記入',
     place: '名城大学内',
@@ -307,6 +309,7 @@ const SHOPS = [
       'https://www.google.com/maps?q=名城食堂 愛知県名古屋市天白区塩釜口１丁目５０１&hl=ja&z=16&output=embed'
   },
 ];
+
 
 
 
