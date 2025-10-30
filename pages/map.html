@@ -23,7 +23,7 @@
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script> <!-- Leaflet本体の読み込み -->
   <script> // 地図表示用のスクリプト開始
-    const center = [35.1555, 136.9640]; // 名城大学（ナゴヤドーム前矢田近辺）の仮中心座標
+    const center = [35.135063,  136.976443]; // 名城大学（ナゴヤドーム前矢田近辺）の仮中心座標
     const map = L.map('map').setView(center, 15); // 地図を作成し中心とズームを設定
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { attribution:'© OpenStreetMap' }).addTo(map); // OSMタイルを表示
 
@@ -31,9 +31,7 @@
     const shops = [ // 配列に店舗情報を定義
       {name:'横浜家系ラーメン英吉家', lat:35.134382, lng:136.978485, page:'../shops/shop1.html'}, // 店1
       {name:'green bakery',   lat:35.134027, lng:136.974120, page:'../shops/shop2.html'}, // 店2
-      {name:'コモンホール', lat:35.1546, lng:136.9650, page:'../shops/shop3.html'}, // 店3
-      {name:'屋台タコス',   lat:35.1567, lng:136.9655, page:'../shops/shop4.html'}, // 店4
-      {name:'定食すぎだま', lat:35.1559, lng:136.9662, page:'../shops/shop5.html'}, // 店5
+
     ]; // 配列定義の終了
 
     shops.forEach(s=>{ // 各店舗について処理
@@ -43,5 +41,6 @@
   </script> <!-- スクリプト終了 -->
 </body> <!-- 本文終了 -->
 </html> <!-- 文書終了 -->
+
 
 
