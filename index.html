@@ -4,7 +4,16 @@
 <head> <!-- メタ情報の開始 -->
   <meta charset="UTF-8"> <!-- 文字コードをUTF-8に設定 -->
   <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- モバイル表示用の拡大縮小設定 -->
-  <title>MeijoSpot | 名城大学周辺グルメ</title> <!-- タブに表示されるタイトル -->
+  <title>MeijoSpot | 名城大学周辺のグルメ情報</title> <!-- タブに表示されるタイトル -->
+  <!-- 検索エンジン向けの基本情報 -->
+  <meta name="description" content="MeijoSpot(名城スポット/メイジョウスポット)は名城大学周辺のグルメを簡単に検索できるサイトです。">
+  <meta name="keywords" content="名城大学, MeijoSpot, 名城スポット, メイジョウスポット, グルメ, 食堂, カフェ, ラーメン, 学内, 学外, 飲食店, 近くの飲食店">
+  <meta name="robots" content="index, follow">
+  <!-- ファビコンのアイコン画像 -->
+  <link rel="icon" href="/favicon.ico" type="image/x-icon"> <!-- 検索エンジン用ファビコン -->
+  <link rel="icon" href="https://meijospot.jp/img/supotarou_orange.ico" type="image/x-icon">
+  <link rel="icon" type="image/png" sizes="32x32"  href="https://meijospot.jp/img/supotarou_orange.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="https://meijospot.jp/img/supotarou_orange.png">
   <link rel="stylesheet" href="css/styles.css"> <!-- 外部CSSを読み込み -->
 </head> <!-- メタ情報の終了 -->
 <body> <!-- ページ本体の開始 -->
@@ -30,17 +39,15 @@
     <a href="index.html" class="drawer-link">トップ</a> <!-- トップへのリンク -->
     <a href="pages/contact.html" class="drawer-link">お問い合わせ</a> <!-- お問い合わせへのリンク -->
     <a href="pages/news.html" class="drawer-link">お知らせ</a> <!-- お知らせへのリンク -->
-    <a href="pages/access.html" class="drawer-link">アクセス</a> <!-- アクセスへのリンク -->
-    <a href="pages/find.html" class="drawer-link">お店を探す</a> <!-- お店を探すへのリンク -->
     <a href="pages/map.html" class="drawer-link">マップ</a> <!-- 地図ページへのリンク -->
+    <a  class="drawer-link">閉じる</a> 
   </nav> <!-- ドロワーメニュー終了 -->
 
   <!-- ヒーロー画像スライダー（自動・スワイプ対応） -->
   <section class="hero"> <!-- ヒーローエリア -->
     <div id="slider" class="slider"> <!-- スライダー本体 -->
-      <img src="img/Top.jpg" alt="トップ写真" class="slide active"> <!-- 1枚目のスライド -->
-      <img src="img/外観.jpg" alt="外観写真" class="slide"> <!-- 2枚目のスライド -->
-      <img src="img/ra-men.jpg" alt="ラーメン写真" class="slide"> <!-- 3枚目のスライド -->
+      <img src="img/HomeRogo.png" alt="トップ写真" class="slide active"> <!-- 1枚目のスライド -->
+      <img src="img/wallpaper1.png" alt="外観写真" class="slide"> <!-- 2枚目のスライド -->
     </div> <!-- スライダー本体の終了 -->
   </section> <!-- ヒーローエリア終了 -->
 
@@ -82,6 +89,11 @@
     <small>© 2025 MeijoSpot</small> <!-- コピーライト表記 -->
   </footer> <!-- フッター終了 -->
 
+  <script src="js/data.js"></script>
   <script src="js/app.js"></script> <!-- フロントの振る舞いを定義するJSを読み込み -->
 </body> <!-- ページ本体の終了 -->
 </html> <!-- HTML文書の終了 -->
+
+
+
+

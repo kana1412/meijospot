@@ -1,2 +1,37 @@
 <!-- contact.html: お問い合わせ（雛形） -->
-<!DOCTYPE html><html lang="ja"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>お問い合わせ | MeijoSpot</title></head><body style="font-family:system-ui,sans-serif;margin:20px"><p><a href="../index.html">← トップへ戻る</a></p><h1>お問い合わせ</h1><p>このページは雛形です。内容を追記してください。</p><footer style="margin-top:40px;background:#efefef;padding:12px;text-align:center"><small>© 2025 MeijoSpot</small></footer></body></html>
+<!DOCTYPE html><html lang="ja"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>お問い合わせ | MeijoSpot</title></head><body style="font-family:system-ui,sans-serif;margin:20px">
+  <header class="header"> <!-- ヘッダー全体のラッパー -->
+    <a href="../index.html" class="logo"> <!-- ロゴをクリックでトップへ -->
+      <img src="../img/rogo.png" alt="MeijoSpot ロゴ"> <!-- 指定のロゴ画像を表示 -->
+    </a> <!-- ロゴリンクの終了 -->
+
+    <div class="search"> <!-- 検索ボックスのラッパー -->
+      <img src="../img/rogo2.png" class="search-icon" alt="検索アイコン"> <!-- 左側の虫眼鏡アイコン -->
+      <input id="searchInput" type="search" placeholder="店舗名・ジャンルで検索"> <!-- 検索入力欄 -->
+    </div> <!-- 検索ボックスの終了 -->
+
+    <button id="menuBtn" class="hamburger" aria-label="メニュー"> <!-- ハンバーガーボタン -->
+      ☰ <!-- シンプルな3本線の代替文字 -->
+    </button> <!-- ハンバーガーボタンの終了 -->
+  </header>
+  <link rel="stylesheet" href="../css/styles.css">
+    <nav id="drawer" class="drawer"> <!-- スライド表示のナビ -->
+    <a href="../index.html" class="drawer-link">トップ</a> <!-- トップへのリンク -->
+    <a href="../pages/contact.html" class="drawer-link">お問い合わせ</a> <!-- お問い合わせへのリンク -->
+    <a href="../pages/news.html" class="drawer-link">お知らせ</a> <!-- お知らせへのリンク -->
+    <a href="../pages/map.html" class="drawer-link">マップ</a> <!-- 地図ページへのリンク -->
+    <a  class="drawer-link">閉じる</a> <!-- ハンバーガーメニュー閉じる -->
+  </nav> <!-- ドロワーメニュー終了 -->
+    <script src = "../js/app.js"> // 画像切替用の最小スクリプト
+    const imgs=[...document.querySelectorAll('.hero img')]; // 画像要素を配列取得
+    let i=0; // 現在のインデックス
+    function show(n){ imgs.forEach((el,k)=>el.classList.toggle('active',k===n)); } // 指定だけ表示
+    document.querySelector('.prev').onclick=()=>{ i=(i-1+imgs.length)%imgs.length; show(i); }; // 前へボタンの処理
+    document.querySelector('.next').onclick=()=>{ i=(i+1)%imgs.length; show(i); }; // 次へボタンの処理
+  </script> <!-- スクリプト終了 -->
+
+  <h1>お問い合わせ</h1><p>現在開発中</p><footer style="margin-top:40px;background:#efefef;padding:12px;text-align:center"><small>© 2025 MeijoSpot</small></footer>
+</body></html>
+
+
+

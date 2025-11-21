@@ -1,44 +1,169 @@
 /* styles.css: サイト全体の見た目を定義するファイル */
-* { box-sizing: border-box; } /* 余白計算を安定させる設定 */
-html, body { margin: 0; padding: 0; font-family: system-ui, sans-serif; } /* デフォルト余白を除去し基本フォントを指定 */
-img { max-width: 100%; height: auto; display: block; } /* 画像をレスポンシブ化 */
-a { color: inherit; text-decoration: none; } /* リンクの下線を消し色を親に合わせる */
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; font-family: system-ui, sans-serif; }
+img { max-width: 100%; height: auto; display: block; }
+a { color: inherit; text-decoration: none; }
 
-.header { display: flex; align-items: center; gap: 8px; padding: 8px 12px; background: #fff; position: sticky; top: 0; z-index: 20; border-bottom: 1px solid #eee; } /* ヘッダーの横並びと固定 */
-.logo { width: 120px; flex: 0 0 auto; } /* ロゴの幅を調整 */
-.logo img { width: 100%; } /* ロゴ画像をコンテナ幅に収める */
-
-.search { flex: 1 1 auto; display: flex; align-items: center; background: #f6f6f6; padding: 6px 10px; border-radius: 999px; } /* 検索ボックスの見た目 */
-.search-icon { width: 18px; height: 18px; margin-right: 6px; opacity: .7; } /* 検索アイコンのサイズ */
-.search input { width: 100%; border: none; background: transparent; outline: none; font-size: 14px; } /* 入力欄の装飾を除去 */
-
-.hamburger { flex: 0 0 auto; font-size: 22px; background: transparent; border: none; padding: 6px 8px; } /* ハンバーガーの見た目 */
-
-.drawer { position: fixed; inset: 0 0 0 auto; width: 70%; max-width: 320px; background: #fff; transform: translateX(100%); transition: transform .25s; padding: 16px; display: flex; flex-direction: column; gap: 10px; z-index: 30; border-left: 1px solid #eee; } /* 右からスライドするナビ */
-.drawer.open { transform: translateX(0); } /* 開いている状態の位置 */
-.drawer-link { padding: 12px; border-radius: 8px; background: #f7f7f7; } /* ナビ内リンクの見た目 */
-
-.hero { aspect-ratio: 16/9; background: #ddd; } /* ヒーロー領域の縦横比を確保 */
-.slider { position: relative; width: 100%; height: 100%; overflow: hidden; } /* スライダーの枠 */
-.slide { position: absolute; inset: 0; object-fit: cover; opacity: 0; transition: opacity .4s; } /* スライド画像の重ね配置 */
-.slide.active { opacity: 1; } /* 表示中のスライドを不透明に */
-
-.quick-actions { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; padding: 12px; background: #fff; } /* 4ボタンを等幅グリッドで並べる */
-.action-btn { display: flex; flex-direction: column; align-items: center; gap: 6px; padding: 8px; background: #f7f7f7; border: none; border-radius: 12px; } /* ボタンのベース */
-.action-btn img { width: 36px; height: 36px; object-fit: contain; } /* ボタン内アイコンのサイズ */
-.action-btn span { font-size: 12px; } /* ボタンラベルのサイズ */
-
-.shop-area { padding: 8px 12px 20px; } /* 店舗セクションの余白 */
-.section-title { font-size: 16px; margin: 6px 0 10px; } /* セクションタイトルの見た目 */
-.shop-row { display: grid; grid-auto-flow: column; grid-auto-columns: 45%; gap: 10px; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 6px; } /* 横スクロール行を作成 */
-.shop-card { scroll-snap-align: start; background: #fff; border: 1px solid #eee; border-radius: 12px; overflow: hidden; } /* 店舗カードの見た目 */
-.shop-card img { width: 100%; aspect-ratio: 4/3; object-fit: cover; } /* サムネールの比率 */
-.shop-card .meta { padding: 8px; display: flex; justify-content: space-between; align-items: center; } /* 店名とバッジの行 */
-.badge { font-size: 11px; padding: 2px 6px; border-radius: 999px; background: #eef6ff; color: #2563eb; } /* 学内・学外バッジ */
-
-.footer { margin-top: 16px; padding: 16px; background: #efefef; text-align: center; } /* フッターの見た目 */
-
-/* 画面幅が広いときの少しの調整 */
-@media (min-width: 768px) { /* タブレット以上の幅に適用 */
-  .shop-row { grid-auto-columns: 30%; } /* カードを少し小さくして表示数を増やす */
+/* ヘッダー（共通） */
+.header {
+  display: flex; align-items: center; gap: 8px;
+  padding: 8px 12px; background: #fff;
+  position: sticky; top: 0; z-index: 20;
+  border-bottom: 1px solid #eee;
 }
+.logo { width: 120px; flex: 0 0 auto; }
+.logo img { width: 100%; }
+
+.search {
+  flex: 1 1 auto; display: flex; align-items: center;
+  background: #f6f6f6; padding: 6px 10px; border-radius: 999px;
+}
+.search-icon { width: 18px; height: 18px; margin-right: 6px; opacity: .7; }
+.search input { width: 100%; border: none; background: transparent; outline: none; font-size: 14px; }
+
+.hamburger { flex: 0 0 auto; font-size: 22px; background: transparent; border: none; padding: 6px 8px; }
+
+/* ドロワー */
+.drawer {
+  position: fixed; inset: 0 0 0 auto; width: 70%; max-width: 320px;　z-index: 1000;
+  background: #fff; transform: translateX(100%); transition: transform .25s;
+  padding: 16px; display: flex; flex-direction: column; gap: 10px;
+  z-index: 30; border-left: 1px solid #eee;
+}
+.drawer.open { transform: translateX(0); }
+.drawer-link { padding: 12px; border-radius: 8px; background: #f7f7f7; }
+
+/* トップのヒーロー（index用） */
+.hero { aspect-ratio: 16/9; background: #ddd; }
+.slider { position: relative; width: 100%; height: 100%; overflow: hidden; }
+.slide { position: absolute; inset: 0; object-fit: cover; opacity: 0; transition: opacity .4s; }
+.slide.active { opacity: 1; }
+
+/* クイックボタン */
+.quick-actions { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; padding: 12px; background: #fff; }
+.action-btn { display: flex; flex-direction: column; align-items: center; gap: 6px; padding: 8px; background: #f7f7f7; border: none; border-radius: 12px; }
+.action-btn img { width: 36px; height: 36px; object-fit: contain; }
+.action-btn span { font-size: 12px; }
+
+/* 店舗一覧 */
+.shop-area { padding: 8px 12px 20px; }
+.section-title { font-size: 16px; margin: 6px 0 10px; }
+.shop-row { display: grid; grid-auto-flow: column; grid-auto-columns: 45%; gap: 10px; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 6px; }
+.shop-card { scroll-snap-align: start; background: #fff; border: 1px solid #eee; border-radius: 12px; overflow: hidden; }
+.shop-card img { width: 100%; aspect-ratio: 4/3; object-fit: cover; }
+.shop-card .meta { padding: 8px; display: flex; justify-content: space-between; align-items: center; }
+.badge { font-size: 11px; padding: 2px 6px; border-radius: 999px; background: #eef6ff; color: #2563eb; }
+
+/* フッター */
+.footer { margin-top: 16px; padding: 16px; background: #efefef; text-align: center; }
+
+/* 幅広の場合の調整 */
+@media (min-width: 768px) {
+  .shop-row { grid-auto-columns: 30%; }
+}
+
+/* ========================= */
+/*   ▼ 店舗詳細ページ用 ▼   */
+/* ========================= */
+
+/* 画像スライダー（詳細ページ） */
+.detail-hero { position: relative; } /* ← これが必須（オーバーレイの基準） */
+.detail-hero img { width: 100%; aspect-ratio: 16/9; object-fit: cover; display: none; }
+.detail-hero img.active { display: block; }
+
+/* ナビ矢印 */
+.arrow {
+  position: absolute; top: 50%; transform: translateY(-50%);
+  background: #0008; color: #fff; border: none; border-radius: 999px;
+  width: 36px; height: 36px; line-height: 36px; text-align: center;
+}
+.arrow.prev { left: 8px; }
+.arrow.next { right: 8px; }
+
+/* 画像左下に店名を重ねる */
+.store-title-overlay {
+  position: absolute;
+  bottom: -10px;
+  left: 8px;
+  color: #fff; /* 白文字 */
+  font-size: 1.6rem;
+  font-weight: 700;
+  padding: 6px 10px;
+  /* background: rgba(0,0,0,0.45); */ /* ← 背景帯は消去 */
+  border-radius: 6px;
+  /* 白文字を強調する黒い縁取り（4方向に影を重ねる） */
+  text-shadow:
+    -1px -1px 2px #000,
+     1px -1px 2px #000,
+    -1px  1px 2px #000,
+     1px  1px 2px #000;
+}
+
+/* 基本情報カード） */
+.store-info {
+  border: 1px solid #e6e6e6;
+  border-radius: 10px;
+  padding: 14px;
+  margin: 24px 16px 16px; /* ← 上にしっかり余白を作って重なり防止 */
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,.04);
+}
+.store-info p { margin: 8px 0; line-height: 1.6; font-size: 0.98rem; }
+.store-info b { font-weight: 600; }
+
+/* 横スクロールのメニューギャラリー */
+.gallery {
+  display: grid; grid-auto-flow: column; grid-auto-columns: 60%;
+  gap: 10px; overflow-x: auto; padding: 12px 16px;
+}
+
+/* 地図セクション */
+.map-block { padding: 0 16px 16px; }
+.map-block h2 { font-size: 1.1rem; margin: 0 0 8px; padding: 0 2px; }
+.map-block iframe { width: 100%; height: 280px; border: 0; }
+
+/* PCで横に伸びすぎないよう中央寄せ（詳細ページ） */
+@media (min-width: 960px) {
+  .store-info, .gallery, .map-block { max-width: 860px; margin-left: auto; margin-right: auto; }
+  .store-title-overlay { font-size: 1.8rem; }
+}
+.map-container {
+  width: 100%;
+  max-width: 600px; /* ← 地図全体の最大幅を制限（例：600px） */
+  margin: 0 auto;   /* ← 中央寄せ */
+  border-radius: 12px; /* ← 角を少し丸める（任意） */
+  overflow: hidden; /* ← はみ出し防止 */
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 400px; /* ← 高さを少し低めに（例：250〜350pxで調整） */
+  border: 0;
+}
+
+/* アクセス見出しデザイン（中央寄せ・下線つき） */
+.meta h2 {
+  position: relative;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #333;
+  text-align: center;
+  margin: 28px 0 12px; /* 少し余白を詰める */
+  letter-spacing: 0.05em;
+}
+
+/* 下線（青系アクセント・文字のすぐ下に） */
+.meta h2::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 3px;
+  background: #0078d7;
+  margin: 3px auto 0; /* ← 距離を近づけるポイント */
+  border-radius: 3px;
+}
+
+#map {
+  z-index: 0; /* 地図を最背面に */
+}
+
